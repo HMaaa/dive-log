@@ -45,3 +45,7 @@ tasks.named('asciidoctor') {
     inputs.dir snippetsDir
     dependsOn test
 }
+
+bootRun {
+    args = ["--app.name=dive-log"]
+}
