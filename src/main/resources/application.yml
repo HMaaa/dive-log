@@ -1,6 +1,13 @@
 spring:
-  main:
-    banner-mode: off
+  profiles:
+    active: local
+    group:
+      local: site-local, db-local
+      dev: site-dev
+    include:
+      - db
+      - my-service
+      - site
   banner:
     image:
       bitdepth: 8

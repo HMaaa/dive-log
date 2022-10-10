@@ -1,0 +1,23 @@
+site:
+  author-name: kang
+  author-email: kjv4546@gmail.com
+
+---
+spring:
+  config:
+    activate:
+      on-profile: site-local
+
+site:
+  author-name: kang-local
+  author-email: kjv4546@gmail.com
+
+---
+spring:
+  config:
+    activate:
+      on-profile: site-dev
+
+site:
+  author-name: kang-dev
+  author-email: kjv4546@gmail.com
